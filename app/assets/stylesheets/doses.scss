@@ -1,0 +1,35 @@
+// // Place all the styles related to the doses controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+// // Graphical variables
+// @import "config/variables";
+// @import "config/bootstrap_variables";
+
+// // External libraries
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// // Your CSS
+// @import "layout/index";
+// @import "components/index";
+// @import "pages/index";
+// @import "vendor/index";
+
+.pad20 {
+  margin-top: 20px;
+}
+
+.pad10 {
+  margin-top: 10px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-gray {
+  color: black;
+}
+

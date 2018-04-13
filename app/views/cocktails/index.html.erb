@@ -1,6 +1,90 @@
-<h1>Cocktails</h1>
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-  <% end %>
-</ul>
+
+<head >
+  <link rel="stylesheet" href="application.css">
+</head >
+<body >
+
+  <div class="topnav">
+    <center><p><a style ="padding-left: 30px" href="#home">Home</a>
+      <a style ="padding-left: 30px"href="#Manage Ingredient">Manage Ingredient</a>
+      <a style ="padding-left: 30px"; href="#Add a cocktail">Add a cocktail</a></center></p>
+    </div>
+
+    <div class="banner" ></div>
+    <div class="banner-image" style="background-image:url(https://images.unsplash.com/photo-1496134732667-ae8d2853a045?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4dd1c9106a69065ccfa21a36cfb53b1&auto=format&fit=crop&w=1050&q=80);background-size:cover; margin: auto;padding-top:60px;padding-bottom:100px;opacity: 0.7">
+      <center><h1>With Your Cocktail Manager </h1></center>
+      <center><h2 style="font-size: 30px; color:white">
+        Travel the the world through <strong>international tastes<strong/>
+        <h2></center>
+
+        </div>
+        <center>
+
+          <div class="banner-cta">
+            <div class="banner-btns">
+              <a class="btn btn-success btn-banner" data-toggle="modal" data-target="#download-syllabus-modal" href="">Manage Ingredient</a>
+             <a class="btn btn-default btn-banner" style="margin-left: 0px;" href="cocktails/new"> <span class="hidden-xs">Add a cocktail</span></a></center>
+            </div>
+        </div>
+
+
+        <center><h2 style="font-size: 20px;">Your last cocktails added</h2></center>
+
+
+
+        <div class="container">
+          <div class="cocktail-row row">
+            <% @cocktails.each do |cocktail| %>
+
+              <div class="col-xs-12 col-sm-3">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://www.atelierdeschefs.com/media/recette-e7517-cocktail-blue-lagoon.jpg);">
+                  <div class="card-category">Popular</div>
+                  <div class="card-description">
+                    <h2><%= cocktail.name %></h2>
+                  </div>
+                  <img class="card-user" >
+                  <a class="card-link" href="#" ></a>
+                </div>
+              </div>
+
+              <% end %>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+</body>
+
+</div>
+
+
+<!--
+
+
+
+
+    <div class="banner-image" >
+
+          <div class="Cocktails Kit-Text" style="text-align: center; font-size: 30px; line-height: 52px; padding: 0px 5px 10px 5px;"><span style="color:#FFFFFF;">With Cocktails Kit enjoy international tastes</span></div>
+
+            <div style="text-align: center;">
+               <table border="0" cellpadding="1" cellspacing="1" style="width:100%;">
+
+                <tbody>
+                  <tr>
+                  <td><a class= "btn-banner" href=""><span style="color:white;"><span style="font-size:20px;">Manage Ingredient</span></span></a></td>
+                  <td><a class ="btn-banner" href=""><span style="color:white;"><span style="font-size:20px;">Add a cocktail</span></span></a></td>
+                  </tr>
+                </tbody>
+
+
+              </table> -->
