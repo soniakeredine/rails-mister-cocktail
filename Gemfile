@@ -41,6 +41,7 @@ gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
+gem "pg"
 
 gem 'simple_form'
 group :development, :test do
